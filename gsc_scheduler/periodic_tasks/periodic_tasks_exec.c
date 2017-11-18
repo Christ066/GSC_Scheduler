@@ -19,7 +19,7 @@
 /*  REVISION |   DATE      |                               |      AUTHOR      */
 /*----------------------------------------------------------------------------*/
 /*  1.0      | 31/jul/2013 |                               | MDRR             */
-/* This file is created based on apptask module from the old version of this  */
+/* This file is created based on app task module from the old version of this  */
 /* scheduler.                                                                 */
 /*============================================================================*/
 
@@ -27,6 +27,9 @@
 /* -------- */
 #include "periodic_tasks_exec.h"
 #include "periodic_tasks_modules.h"
+#include "..\source\MAL\mal_ReadPort.h"
+#include "..\app\app_LedMode.h"
+
 
 
 /**************************************************************
@@ -40,6 +43,9 @@
  **************************************************************/
  void periodic_tasks_exec_5tks(void)
  {
+	 mal_DebounceConfig();
+	 mal_SkipSong();
+	 mal_ShutdownSystem();
 
  }
  
@@ -68,6 +74,7 @@
  **************************************************************/
  void periodic_tasks_exec_20tks(void)
  {
+
 
  }
  
@@ -110,6 +117,7 @@
  **************************************************************/
  void periodic_tasks_exec_500tks(void)
  {
+	 mal_ForwardSong();
 
  }
  
@@ -124,6 +132,5 @@
  **************************************************************/
  void periodic_tasks_exec_1Mtks(void)
  {
-	 app_rgb_led_fsm();
+
  }
- 

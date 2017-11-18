@@ -189,6 +189,10 @@ typedef enum
 #define TRUE ((T_BOOLEAN)1u)
 #endif
 
+#ifndef PINPUT
+#define PINPUT	((T_FLAG_ARRAY)8U)
+#endif
+
 #ifndef NULL
 #define NULL 0
 #endif

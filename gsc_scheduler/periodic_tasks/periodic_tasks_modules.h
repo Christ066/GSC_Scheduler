@@ -31,7 +31,8 @@
 /*============================================================================*/
 //#include "MyApplication.h"
 //#include "MyLowLayerDriver.h"
-#include "../app/RGB_LEDs.h"
+
+/* #include "../app/RGB_LEDs.h"*/ //Header comentado personalmente para hacer pruebas
 /*============================================================================*/
 
 #endif

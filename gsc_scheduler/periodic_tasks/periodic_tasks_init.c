@@ -27,7 +27,7 @@
 /* -------- */
 #include "periodic_tasks_init.h"
 #include "periodic_tasks_modules.h"
-
+#include "..\source\HAL\hal_GpioSetup.h"
 
 /**************************************************************
  *  Name                 : periodic_tasks_init_MclDrvs
@@ -50,7 +50,8 @@ void periodic_tasks_init_MclDrvs(void)
  **************************************************************/
 void periodic_tasks_init_SysDrvs(void)
 {
-	init_leds();
+	 hal_InitPort();
+
 }
 
 /**************************************************************

@@ -8,7 +8,7 @@
 * created_by:      MDRR
 * date_created:    July 31 2013    
 *=============================================================================*/
-/* DESCRIPTION : Configuartion file of the "Grandpa´s Clock Scheduler" core   */
+/* DESCRIPTION : Configuartion file of the "Grandpaï¿½s Clock Scheduler" core   */
 /*============================================================================*/
 /* FUNCTION COMMENT : Here is the table to configure the tasks of the system  */
 /*                                                                            */
